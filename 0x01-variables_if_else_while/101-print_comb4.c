@@ -1,11 +1,9 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success/correct)
  */
- 
  int main(void)
  
   }
@@ -29,7 +27,7 @@
 
 	  if  ((left == 55) && (center == left + 1) && (right == center + 1))
 
-      {
+         {
 	      break;
 	      {
 
@@ -37,14 +35,13 @@
 
 	      putchar (' ');
 
-    }
+         }
 
-    }
+         }  
 
-    }
+         }
 
          putchar('\n');
 
 	 return (0);
-
 	 }
