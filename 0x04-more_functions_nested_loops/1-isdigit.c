@@ -1,12 +1,15 @@
 #include "main.h"
+
 /**
- * mul -multiplies two integers
- *@a: print int
- *@b: print int
- * Return: Always 0.
+ * _isdigit - Checks if it's a digit
+ * @c: Character/digit
+ * Return: 1 if c is a digit, otherwise 0
  */
 
-int mul(int a, int b)
+int _isdigit(int c)
+
 {
-	return (a * b);
+		if (c >= '0' && c <= '9')
+		return (1);
+		return (0);
 }
