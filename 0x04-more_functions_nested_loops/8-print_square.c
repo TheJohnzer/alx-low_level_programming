@@ -28,7 +28,7 @@ void print_square(int size)
 	}
 
 	else
-i	{
+	{
 		_putchar ('\n');
 	}
 
