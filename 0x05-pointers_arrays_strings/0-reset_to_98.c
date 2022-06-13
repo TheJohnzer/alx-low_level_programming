@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * reset_to_98 - changes the value of an int it points to
@@ -7,7 +7,6 @@
  */
 
 void reset_to_98(int *n)
-
 {
 		*n = 98;
 }
