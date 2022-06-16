@@ -1,4 +1,5 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
  *_strcat - concatenates two strings
  *@dest: A pointer to a character that will be changed
@@ -24,6 +25,5 @@ char *_strcat(char *dest, char *src)
 		i++;
 	}
 	dest[i] = '\0';
-
 	return (dest);
 }
