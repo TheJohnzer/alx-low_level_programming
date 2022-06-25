@@ -2,50 +2,43 @@
 #include <stdlib.h>
 
 /**
- * main - main function
+ * main - entry point function
  * @argc: number of arguments
- * @argv: array of pointers
+ * @argv: array containing arguments
+ *
  * Return: 0
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int sum, n;
+int cash, coins;
 
 	if (argc != 2)
 	{
-		printf("Error\n")
-		return (1);
+	printf("Error\n");
+	return (1);
 	}
-	sum = atoi(argv[1]);
-	while (sum > 0)
+	cash = atoi(argv[1]);
+	if (cash <= 0)
 	{
-		if (sum >= 25)
-		{
-			n++;
-			sum = sum - 25;
-		}
-		else if (sum >= 10)
-		{
-			n++;
-			sum = sum - 10;
-		}
-		else if (sum >= 5)
-		{
-			n++;
-			sum = sum - 5;
-		}
-		else if (sum >= 2)
-		{
-			n++;
-			sum = sum - 2;
-		}
-		else if (sum >= 1)
-		{
-			n++;
-			sum = sum - 1;
-		}
+	printf("0\n");
+	return (0);
 	}
-	printf("%d\n", n);
+	for (coins = 0; cash > 0; coins++)
+	{
+
+	if (cash >= 25)
+	cash -= 25;
+	else if (cash >= 10)
+	ash -= 10;
+	else if (cash >= 5)
+	cash -= 5;
+	else if (cash >= 2)
+	cash -= 2;
+	else
+	cash -= 1;
+	}
+
+	printf("%d\n", coins);
 	return (0);
 }
