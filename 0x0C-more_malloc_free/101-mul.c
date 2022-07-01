@@ -107,7 +107,7 @@ int main(int argc, char *argv[])
 			}
 		i = ln1 - 1, j--, addl = 0, ca++, k = lnout - (1 + ca);
 		}
-		if (j<0)
+		if (j < 0)
 		{
 			if (nout[0] != '0')
 			break;
