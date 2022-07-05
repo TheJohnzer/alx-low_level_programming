@@ -1,25 +1,31 @@
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
+
+#include <stdio.h>
 #include <stdlib.h>
-#include "dog.h"
 
 /**
- * init_dog - initialize a variable of type struct dog
- *@d: array
- *@name: name
- *@age: age
- *@owner: owner
- * Description: This struct is for dog
+ * struct dog - dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
+ *
  */
 
-void init_dog(struct dog *d, char *name, float age, char *owner)
+struct dog
 {
-	if (d == NULL)
-		return;
+		char *name;
+		float age;
+		char *owner;
+};
 
-	else
-	{
-		d->name = name;
-		d->age = age;
-		d->owner = owner;
-	}
+typedef struct dog dog_t;
+int _putchar(char a);
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+char *_strcpy(char *dest, char *src);
+int _strlen(char *s);
 
-}
+#endif
